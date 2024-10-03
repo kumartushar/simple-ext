@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
 class Numeric
-  KILOBYTE = 1024
-  MEGABYTE = KILOBYTE * 1024
-  GIGABYTE = MEGABYTE * 1024
-  TERABYTE = GIGABYTE * 1024
-  PETABYTE = TERABYTE * 1024
-  EXABYTE  = PETABYTE * 1024
+  KILOBYTE ||= 1024
+  MEGABYTE ||= KILOBYTE * 1024
+  GIGABYTE ||= MEGABYTE * 1024
+  TERABYTE ||= GIGABYTE * 1024
+  PETABYTE ||= TERABYTE * 1024
+  EXABYTE  ||= PETABYTE * 1024
 
   # Enables the use of byte calculations and declarations, like 45.bytes + 2.6.megabytes
   #
